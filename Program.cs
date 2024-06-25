@@ -7,22 +7,22 @@ namespace MeuApp
     {
         static void Main(string[] args)
         {
-            short num = -10; //pode numeros positivos e negativos até 16 bits
-            ushort num2 = 10; // pode somente numeros positivos até 16 bits
+            var num = 2.5; // double até 64 bits
+            double num1 = 2.5; // double até 64 bits
 
-            int num3 = -1000000000; // pode numeros positivos e negativos até 32 bits
-            uint num4 = 1000000000; // pode somente numeros positivos até 32 bits
+            var num3 = 2500.00f; // 32 bits
+            float num2 = 2.500f; // para utilizar o float é necessário colocar a notação f
 
-            long num5 = -1000000000000000000; // pode numeros positivos e negativos até 64 bits
-            ulong num6 = 10000000000000000000; // pode somente numeros positivos até 64 bits
+            var num4 = 2500.0m; // 128 bits
+            decimal num5 = 2500.000m; // para utilizar o decimal é necessário colocar a notação m
 
 
             Console.WriteLine(num);
+            Console.WriteLine(num1);
             Console.WriteLine(num2);
             Console.WriteLine(num3);
             Console.WriteLine(num4);
             Console.WriteLine(num5);
-            Console.WriteLine(num6);
 
 
         }
