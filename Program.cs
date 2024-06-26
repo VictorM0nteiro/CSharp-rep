@@ -6,17 +6,17 @@ namespace MeuApp
     class Program
     {
         static void Main(string[] args)
-        {
-            bool usuarioJaCadastrado = false; // boolean type T or F
-            var usuario2 = true; // a partir do momneto que defininir como F ou T se torna um boolean type
+        {   
+            char primeiraletra = 'a'; // Não esquecer de utilizar as '' para a atribuição do char;
+            var segundaletra = 'b';
+            
+            string sequenciachars = "batata";// Para a string tem que ser "";
+            var sequenciacharnum = "1000000000000000000000000000000000"; // cadeia de caracteres;
 
-            bool pagamentorecebido = true;
-            var batatadoceEhbom = false;
-
-            Console.WriteLine(usuarioJaCadastrado);
-            Console.WriteLine(usuario2);
-            Console.WriteLine(pagamentorecebido);
-            Console.WriteLine(batatadoceEhbom);
+            Console.WriteLine(primeiraletra);
+            Console.WriteLine(segundaletra);
+            Console.WriteLine(sequenciachars);
+            Console.WriteLine(sequenciacharnum);
 
         }
     }
