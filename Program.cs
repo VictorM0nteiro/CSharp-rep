@@ -8,17 +8,18 @@ namespace MeuApp
         static void Main(string[] args)
         {   
 
-            Console.Write("");
-            string nome = Console.ReadLine(); // Esse método somente funciona para strings
 
-            // var idade = 25; //int
-            // idade = 26;
-            // var letra = 'b';
-            // Console.WriteLine(idade);
-            // Console.WriteLine(letra);
+            var idade = 25; //int
+            idade = 26;
+            //idade = "Victor"; Não posso implicitamente mudar algo que foi definido como INT para uma string
+            var letra = 'b'; // haverá situações que criaremos um tipo complexo e o VAR economizará a quantidade de código;
+
+            Console.WriteLine(idade);
+            Console.WriteLine(letra);
 
 
-            Console.WriteLine(nome);
+
+
         }
     }
 }
