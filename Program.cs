@@ -7,17 +7,18 @@ namespace MeuApp
     {
         static void Main(string[] args)
         {   
-            char primeiraletra = 'a'; // Não esquecer de utilizar as '' para a atribuição do char;
-            var segundaletra = 'b';
-            
-            string sequenciachars = "batata";// Para a string tem que ser "";
-            var sequenciacharnum = "1000000000000000000000000000000000"; // cadeia de caracteres;
 
-            Console.WriteLine(primeiraletra);
-            Console.WriteLine(segundaletra);
-            Console.WriteLine(sequenciachars);
-            Console.WriteLine(sequenciacharnum);
+            Console.Write("");
+            string nome = Console.ReadLine(); // Esse método somente funciona para strings
 
+            // var idade = 25; //int
+            // idade = 26;
+            // var letra = 'b';
+            // Console.WriteLine(idade);
+            // Console.WriteLine(letra);
+
+
+            Console.WriteLine(nome);
         }
     }
 }
