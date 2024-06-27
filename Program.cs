@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Threading.Channels;
 
 namespace MeuApp
 {
@@ -9,26 +8,18 @@ namespace MeuApp
         static void Main(string[] args)
         {   
 
-            // var quantidade = ?? // Para situações em que não saberei o tipo utilizar o OBJECT
-            object quantidade = 2.5;
-            quantidade = 3; // posso ficar coinvertendo sem nenhum problema double -> int
-            quantidade = 5.5; // e vice versa também // basicamente ele pode ser qualquer coisa;
+            //int nome = null; Cannot convert null to 'int' because it is a non-nullable value type
 
-            object teste = "bom";
-            teste = 'b'; // não limita strings -> chars e vice versa
+            int? nome = null; // In order of being converted its necessary to use '?';
+            Console.WriteLine(nome);
 
-            object teste2 = "good";
-            teste2 = 'c';
-            teste2 = 5555555555555555555; // posso converter em ints e double, floats etc;
-            
-            
-            Console.WriteLine(quantidade);
-            Console.WriteLine(teste);
-            Console.WriteLine(teste2);
-
-
-
-
+            int? idade = 0; // devo colocar na primeira inicialização se tiver intenção de usar;
+            Console.WriteLine(idade);
+            idade = null; // A qualquer momento posso mudar para um NULL, mas é ncessário na primeira inicialização ter o '?';
+            Console.WriteLine(idade);
+            idade = 18;
+            Console.WriteLine(idade);
         }
+        
     }
 }
