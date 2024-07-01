@@ -7,12 +7,14 @@ namespace MeuApp
     {
         static void Main(string[] args)
         {
-            int num1 = 10;
-            int num2 = num1*10;
-            float num3 = (float)num2/3; // Explicit conversion, is necessary to declare the type before, in order to convert non-compatible types;
-            double num4 = (double)num3/7;
-            Console.WriteLine(num3);
-            Console.WriteLine(num4);
+            
+            int inteiro = int.Parse("100"); // Está convertendo a string para um inteiro
+            int mult = inteiro*10; // como converteu para um inteiro torna poss´vel a multiplicação;
+            Console.WriteLine(mult);
+
+            double num = double.Parse("100,057");
+            double divs = num/2;
+            Console.WriteLine(divs);
         }
 
     }
