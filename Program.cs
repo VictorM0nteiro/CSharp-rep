@@ -14,22 +14,9 @@ namespace MeuApp
             Console.Write("");
             string num2 = Console.ReadLine();
             int y = Convert.ToInt32(num2);
-
-            if( x == y){
-                Console.WriteLine("São iguais");
-                Console.WriteLine(x);
-                Console.WriteLine(y);
-            }
-            else if( x > y){
-                Console.WriteLine("x é maior que y");
-                Console.WriteLine(x);
-            }
-            else{
-                Console.WriteLine("Y é maior que x");
-                Console.WriteLine(y);
-            }
             
-
+            int soma = x + y;
+            Console.WriteLine("X = " + soma);
 
         }
 
