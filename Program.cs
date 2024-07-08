@@ -9,18 +9,40 @@ namespace MeuApp
         {
             Console.Write("");
             string num = Console.ReadLine();
-            double x = Convert.ToDouble(num);
+            int x = Convert.ToInt32(num);
 
-            if( x >= 0 && x <= 25.00)
-                Console.WriteLine("Intervalo [0,25]");
-            else if( x > 25.00 && x <= 50.00)
-                Console.WriteLine("Intervalo (25,50]");
-            else if( x > 50.00 && x <= 75.00)
-                Console.WriteLine("Intervalo (50,75]");
-            else if( x > 75.00 && x <= 100.00)
-                Console.WriteLine("Intervalo (75,100]");
-            else
-                Console.WriteLine("Fora de intervalo");
+            Console.Write("");
+            string name = Console.ReadLine();
+
+            switch (x)
+            {
+                case 1: 
+                    Console.WriteLine("You Chose 1");
+                    break;
+                case 2: 
+                    Console.WriteLine("You chose 2");
+                    break;
+                case 3: 
+                    Console.WriteLine("You chose 3");
+                    break;
+                default: 
+                    Console.WriteLine("You've chosen another number");
+                    break;
+            }
+
+            switch (name)
+            {
+                case "joao": Console.WriteLine("That ain't the right name");
+                    break;
+                case "Charles": Console.WriteLine("That ain't the right name");
+                    break;
+                case "victor": Console.WriteLine("That is the right name");
+                    break;
+                default: Console.WriteLine("Seriouly? :(");
+                    break;
+            }
+
+
         }
 
     }
