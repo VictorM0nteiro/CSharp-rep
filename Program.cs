@@ -11,38 +11,33 @@ namespace MeuApp
             string num = Console.ReadLine();
             int x = Convert.ToInt32(num);
 
-            Console.Write("");
-            string name = Console.ReadLine();
-
-            switch (x)
-            {
-                case 1: 
-                    Console.WriteLine("You Chose 1");
-                    break;
-                case 2: 
-                    Console.WriteLine("You chose 2");
-                    break;
-                case 3: 
-                    Console.WriteLine("You chose 3");
-                    break;
-                default: 
-                    Console.WriteLine("You've chosen another number");
-                    break;
+            for( int i = 0; i <= x; i++){
+                Console.WriteLine(i);
             }
+            Console.WriteLine(" ");
 
-            switch (name)
-            {
-                case "joao": Console.WriteLine("That ain't the right name");
-                    break;
-                case "Charles": Console.WriteLine("That ain't the right name");
-                    break;
-                case "victor": Console.WriteLine("That is the right name");
-                    break;
-                default: Console.WriteLine("Seriouly? :(");
-                    break;
+            //Conta de 0 a 5
+            for( var i = 0; i <= 5; i++){
+                Console.WriteLine(i);
             }
+            Console.WriteLine(" ");
 
+            //Conta de 1 a 5
+            for( var i = 1; i <= 5; i++){
+                Console.WriteLine(i);
+            }
+            Console.WriteLine(" ");
 
+            //Conta de 0 a 4
+            for( var i = 0; i < 5; i++){
+                Console.WriteLine(i);
+            }
+            Console.WriteLine(" ");
+
+            //Conta de 5 a 0
+            for( var i = 5; i >= 0; i--){
+                Console.WriteLine(i);
+            }
         }
 
     }
