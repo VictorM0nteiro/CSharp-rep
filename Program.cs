@@ -11,33 +11,57 @@ namespace MeuApp
             string num = Console.ReadLine();
             int x = Convert.ToInt32(num);
 
-            for( int i = 0; i <= x; i++){
+            int i = 0;
+            while( i <= x){
                 Console.WriteLine(i);
+                i++;
             }
             Console.WriteLine(" ");
 
             //Conta de 0 a 5
-            for( var i = 0; i <= 5; i++){
-                Console.WriteLine(i);
+            var j = 0;
+            while( j <= 5){
+                Console.WriteLine(j);
+                j++;
             }
             Console.WriteLine(" ");
 
             //Conta de 1 a 5
-            for( var i = 1; i <= 5; i++){
-                Console.WriteLine(i);
+            var a = 1;
+            while(a <= 5){
+                Console.WriteLine(a);
+                a++;
             }
             Console.WriteLine(" ");
 
             //Conta de 0 a 4
-            for( var i = 0; i < 5; i++){
-                Console.WriteLine(i);
+            var n = 0;
+            while(n < 5){
+                Console.WriteLine(n);
+                n++;
             }
             Console.WriteLine(" ");
 
             //Conta de 5 a 0
-            for( var i = 5; i >= 0; i--){
-                Console.WriteLine(i);
+            var q = 5;
+            while(q >= 0){
+                Console.WriteLine(q);
+                q--;
             }
+
+            //INcrementando antes 1 a 6
+            var w = 0;
+            while(w <= 5){
+                w++;
+                Console.WriteLine(w);
+            }
+
+            // //infinito 
+            // var valor = 0;
+            // while(true){ // Infinito pois true nunca sera false
+            //     valor++;
+            //     Console.WriteLine(valor);
+            // }
         }
 
     }
