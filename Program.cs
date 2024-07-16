@@ -7,26 +7,21 @@ namespace MeuApp
     {
         static void Main(string[] args)
         {
-            Console.Write("");
-            string num = Console.ReadLine();
-            int x = Convert.ToInt32(num);
-
-            int i = 0;
-            do{
-                Console.WriteLine(i);
-                i++;
-            }
-            while(i <= x);
-            Console.WriteLine(" ");
-
-            // infinito
-            // var valor = 0;
-            // do{
-            //     Console.WriteLine(valor);
-            //     valor++;
-            // }
-            // while(true);
+            MeuMetodo();
+            string names = RetornaNome("Victor", "Monteiro");
+            Console.WriteLine(names);
         }
 
+        static void MeuMetodo()
+        {
+            Console.WriteLine("C# is cool");
+        }
+
+        static string RetornaNome(string nome, string sobrenome, int idade = 18, bool teste = false)
+        {
+        // Definindo parametros para retorno do nome e sobrenome
+        return nome + " " + sobrenome + " tem " + idade.ToString() + " e " + teste.ToString();
+        }
     }
+
 }
