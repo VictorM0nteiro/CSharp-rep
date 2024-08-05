@@ -7,20 +7,30 @@ namespace MeuApp
     {
         static void Main(string[] args)
         {
-            MeuMetodo();
-            string names = RetornaNome("Victor", "Monteiro");
-            Console.WriteLine(names);
-        }
+            // Value types
+            int x = 25;
+            int y = x;
+            Console.WriteLine(x);
+            Console.WriteLine(y);
 
-        static void MeuMetodo()
-        {
-            Console.WriteLine("C# is cool");
-        }
+            x = 32;
+            Console.WriteLine(x);
+            Console.WriteLine(y);// doesnt change because it aint the same as x, its a copy, its adress on the memory is another one
 
-        static string RetornaNome(string nome, string sobrenome, int idade = 18, bool teste = false)
-        {
-        // Definindo parametros para retorno do nome e sobrenome
-        return nome + " " + sobrenome + " tem " + idade.ToString() + " e " + teste.ToString();
+
+            Console.WriteLine(" ");
+
+            //reference types
+            var arr = new string[2];
+            arr[0] = "item 1";
+            var arr2 = arr;
+            Console.WriteLine(arr[0]);
+            Console.WriteLine(arr2[0]);
+
+            arr[0] = "item 2";
+            Console.WriteLine(arr[0]);
+            Console.WriteLine(arr2[0]);
+
         }
     }
 
