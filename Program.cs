@@ -1,4 +1,4 @@
-﻿using System;
+﻿using System;   
 
 namespace MeuApp
 {
@@ -7,31 +7,42 @@ namespace MeuApp
     {
         static void Main(string[] args)
         {
-            // Value types
-            int x = 25;
-            int y = x;
-            Console.WriteLine(x);
-            Console.WriteLine(y);
 
-            x = 32;
-            Console.WriteLine(x);
-            Console.WriteLine(y);// doesnt change because it aint the same as x, its a copy, its adress on the memory is another one
+            var mouse = new Product(1, "Mouse Gamer", 299.97, 5.13);
 
+            mouse.Id = 5;
+            //mouse.Name = "Mouse de escritório";
+            //mouse.Price = 30.56;
 
-            Console.WriteLine(" ");
+            Console.WriteLine("Id: " + mouse.Id);
+            Console.WriteLine("Name: " + mouse.Name);
+            Console.WriteLine("Price: " + mouse.Price);
+            Console.WriteLine("Dolar: " + mouse.Dolar);
+            
 
-            //reference types
-            var arr = new string[2];
-            arr[0] = "item 1";
-            var arr2 = arr;
-            Console.WriteLine(arr[0]);
-            Console.WriteLine(arr2[0]);
-
-            arr[0] = "item 2";
-            Console.WriteLine(arr[0]);
-            Console.WriteLine(arr2[0]);
+            double PriceInDolar = mouse.PriceInDolar(mouse.Dolar);
+            Console.WriteLine("Price in Dolar: " + PriceInDolar);
 
         }
     }
 
+    struct Product
+    {
+        public Product(int id /*propriedades*/, string name, double price, double dolar) // Método CONSTRUTOR é necessário explicitar as propriedades!!!!!!!
+        {
+            Id = id;
+            Name = name; // atribuindo os parâmetros às propriedades
+            Price = price; // propriedades recebendo parâmetros
+            Dolar = dolar;
+        }
+
+        public int Id;
+        public string Name; // parâmetros
+        public double Price; // letra maiuscula é uma propriedade
+        public double Dolar;
+
+        public double PriceInDolar( double dolar){
+            return Price * dolar; // letra minuscula é um parâmetro
+        }
+    }
 }
